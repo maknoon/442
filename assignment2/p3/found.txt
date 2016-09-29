@@ -1,0 +1,17 @@
+--- that took 630.45609808 seconds ---
+dd21ec1dede1e11a35343b8b09305f24, 9c5ae41d66b66fc75495df0fcfc57b81
+
+--- that took 183.244222879 seconds ---
+found a hit for abd6bc22da12062a, 5ebeee82c0843231
+
+--- that took 24.5690460205 seconds ---
+found a hit for 95cb6025e33269ad, 8d6cb4d689017620
+
+--- that took 302.775826931 seconds ---
+found a hit for b380552e5e3dd3c0, 17f175f330ab14b7
+
+--- that took 53.0165178776 seconds ---
+found a hit for 3bbeb365330edc42, 96438c6a797d2055
+
+--- that took 156.793691874 seconds ---
+found a hit for 94c284e5e2cea1ba, aae9aacf83808f25
