@@ -1,0 +1,22 @@
+# quick summary
+
+(1)
+a. {salt,pw}: Ue9241 
+b. time: <1s
+c. entropy: log2(10^4) = 13.29 bits
+
+(2)
+a. {salt,pw}: Sx%x-=!b
+b. time: 17m24s on 32 threads
+c. entropy: log2(76^6) = 37.49 bits
+
+(3)
+a. {pw}: Z=g2(PkGQBbdus
+b. time: none
+c. entropy: log2(76^14) = 87.47 bits
+
+(4)
+a. {pw}: t4&rq-
+b. time: 6m59s on 32 threads
+c. entropy: log2(76^6) = 37.49 bits
+
