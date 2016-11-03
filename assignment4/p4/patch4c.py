@@ -1,6 +1,11 @@
 import sys
 import hashlib
 
+'''
+TO RUN SCRIPT
+(1) Ensure that 56047129.program2.exe is in the same directory
+(2) $ python patch4c.py
+'''
 
 # Use SHA-1 library function to hash new password
 def newPw():
@@ -10,12 +15,12 @@ def newPw():
 
 
 # Patch the password by
-# (1) finding the address of the old SHA-1 hash
-# (2) rewriting byte-by-byte the new hash
+# (1) seeking to the address of the old SHA-1 hash
+# (2) rewriting old hash with hex of the new hash
 def patch( newhash ):
     
     hexhash = newhash.decode("hex")
-    startaddr = 0x0001E011
+    startaddr = 0x0001E011 # found via IDA <3
 
     with file('56047129.program2.exe', 'r+b') as fh:
         print "patching {0} into {1}".format(newhash, hex(startaddr))
@@ -23,12 +28,12 @@ def patch( newhash ):
         fh.write(hexhash)
     fh.close()
             
-    sys.exit("\nSuccessfully patched into 56047129.program2. Goodbye!")
+    sys.exit("\nSuccessfully patched 56047129.program2. Goodbye!")
 
 
 if __name__ == '__main__':
     try:
         newPw()
     except KeyboardInterrupt:
-        sys.exit("\nGoodbye!")
+        sys.exit("\nProgram not patched. Goodbye!")
         
